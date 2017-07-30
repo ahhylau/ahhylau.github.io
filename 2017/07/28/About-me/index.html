@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/07/28/About-me/index.html">
 <meta property="og:site_name" content="Ahhylau&#39;s web">
 <meta property="og:description" content="I am a Ph.D student in the Department of Mathematics at Shanghai University. My advisors were prof. Liying Kang for my PhD and prof. Zhenlin Gao for my MSc. My research is focused on Graph Theory and">
-<meta property="og:updated_time" content="2017-07-28T13:47:20.779Z">
+<meta property="og:updated_time" content="2017-07-29T02:05:52.983Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="About me">
 <meta name="twitter:description" content="I am a Ph.D student in the Department of Mathematics at Shanghai University. My advisors were prof. Liying Kang for my PhD and prof. Zhenlin Gao for my MSc. My research is focused on Graph Theory and">
@@ -80,39 +80,19 @@
             
             <div id="search-form-wrap">
 
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..." />
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="Search" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
 <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Articles',
-            PAGES: 'Pages',
-            CATEGORIES: 'Catégories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:yoursite.com ' + keyword;
+        return false;
+    });
+})(jQuery);
 </script>
-<script src="/js/insight.js"></script>
 
 </div>
         </div>
@@ -133,9 +113,19 @@
                 
                 <td>
                     
-    <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
-    </div>
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="Search" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:yoursite.com ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
 
                 </td>
             </tr>
@@ -154,16 +144,16 @@
             <h2 id="name">ahhylau</h2>
             <h3 id="title">Graph &amp; Matrix</h3>
             <span id="location"><i class="fa fa-map-marker"></i>Shanghai, China</span>
-            <a id="follow" target="_blank" href="https://github.com/ahhylau/">SUIVRE</a>
+            <a id="follow" target="_blank" href="https://github.com/ahhylau/">FOLLOW</a>
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                2
-                <span>Articles</span>
+                3
+                <span>posts</span>
             </div>
             <div class="article-info-block">
                 1
-                <span>Tag</span>
+                <span>tag</span>
             </div>
         </div>
         
@@ -248,8 +238,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>I am a Ph.D student in the Department of Mathematics at Shanghai University. My advisors were prof. <a href="http://www.math.shu.edu.cn/Default.aspx?tabid=37887&amp;ctl=Detail&amp;mid=67622&amp;Id=200835&amp;SkinSrc=[L]Skins/mathcn2/mathc1" target="_blank" rel="external">Liying Kang</a> for my PhD and prof. Zhenlin Gao for my MSc. My research is focused on Graph Theory and Matrix Theory, mostly focused on topics in extremal and spectral graph theory. For more information on my research, see my papers (below), my CV.</p>
-<p>Besides mathematics, I am also interested in <font color="#0099ff">LaTeX</font>.</p>
+            <p>I am a Ph.D student in the Department of Mathematics at Shanghai University. My advisors were prof. <a href="http://www.math.shu.edu.cn/Default.aspx?tabid=37887&amp;ctl=Detail&amp;mid=67622&amp;Id=200835&amp;SkinSrc=[L]Skins/mathcn2/mathc1" target="_blank" rel="external">Liying Kang</a> for my PhD and prof. Zhenlin Gao for my MSc. My research is focused on Graph Theory and Matrix Theory, mostly focused on topics in extremal and spectral graph theory. For more information on my research, see my papers (below), my CV.<br>Besides mathematics, I am also interested in <font color="#0099ff">LaTeX</font>.</p>
 
         
         </div>
@@ -260,7 +249,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2017/07/28/About-me/" data-id="cj5nutb6r00013ku4u37ljz4t" class="article-share-link"><i class="fa fa-share"></i>Partager</a>
+    <a data-url="http://yoursite.com/2017/07/28/About-me/" data-id="cj5q1cuh200045gu4k53lfevk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -328,7 +317,7 @@
 
             
     
-        <a href="http://yoursite.com/2017/07/28/About-me/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yoursite.com/2017/07/28/About-me/">Commentaires</a>
+        <a href="http://yoursite.com/2017/07/28/About-me/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yoursite.com/2017/07/28/About-me/">Comments</a>
     
 
         </footer>
@@ -337,9 +326,18 @@
         
 <nav id="article-nav">
     
+        <a href="/2017/07/29/Publications/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Publications
+                
+            </div>
+        </a>
+    
     
         <a href="/2017/07/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Plus ancien</strong>
+            <strong class="article-nav-caption">Older</strong>
             <div class="article-nav-title">Hello World</div>
         </a>
     
@@ -366,9 +364,28 @@
    
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Récents</h3>
+        <h3 class="widget-title">recent</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/07/29/Publications/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/07/29/Publications/" class="title">Publications</a></p>
+                            <p class="item-date"><time datetime="2017-07-29T14:31:29.000Z" itemprop="datePublished">2017-07-29</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -417,16 +434,16 @@
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Archives</h3>
+        <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">3</span></li></ul>
         </div>
     </div>
 
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Tags</h3>
+        <h3 class="widget-title">tags</h3>
         <div class="widget">
             <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Me/">Me</a><span class="tag-list-count">1</span></li></ul>
         </div>
@@ -435,7 +452,7 @@
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Nuage de tags</h3>
+        <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
             <a href="/tags/Me/" style="font-size: 10px;">Me</a>
         </div>
@@ -444,12 +461,40 @@
     
         
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">Liens</h3>
+        <h3 class="widget-title">links</h3>
         <div class="widget">
             <ul>
                 
                     <li>
-                        <a href="http://hexo.io">Hexo</a>
+                        <a href="http://www.sciencedirect.com/science/journal/00973165?sdc=1">JCTA</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.sciencedirect.com/science/journal/00958956">JCTB</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.sciencedirect.com/science/journal/01956698?sdc=1">EJC</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.sciencedirect.com/science/journal/00243795?sdc=1">LAA</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://arxiv.org/archive/math">arXiv</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.latexstudio.net/">LaTeXStudio</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://tex.stackexchange.com/">StackExchange</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://ipe.otfried.org/">IPE</a>
                     </li>
                 
             </ul>
